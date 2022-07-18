@@ -5,28 +5,36 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			type: "Input: ",
 			value: "",
 		};
 	}
 	updateContent = (input) => {
-		console.log("value: " + this.state.value);
-		console.log("input: " + input);
-		if (this.state.value === "") {
+		if (this.state.type === "Result: ") {
+			this.setState({ type: "Input: ", value: "" });
+		}
+		// console.log("value: " + this.state.value);
+		// console.log("input: " + input);
+		if (
+			this.state.value === "" ||
+			this.state.value === "Enter a number other than 0 first"
+		) {
 			if (
 				input === "=" ||
 				input === "+" ||
 				input === "-" ||
 				input === "clear" ||
 				input === "*" ||
-				input === "/"
+				input === "/" ||
+				input === "0"
 			) {
 				// console.log("did it");
-				this.setState({ value: "Enter a number first" });
+				this.setState({ value: "Enter a number other than 0 first" });
 			} else {
 				this.setState({ value: input });
 			}
 		} else {
-			if (this.state.value === "Enter a number first") {
+			if (this.state.value === "Enter a number other than 0 first") {
 				this.setState({ value: input });
 			} else {
 				let newValue = this.state.value + input;
@@ -36,6 +44,16 @@ class App extends Component {
 	};
 	equals = () => {
 		console.log("equal pushed");
+		console.log("value: " + this.state.value);
+		this.setState({ type: "Result: " });
+		let equation = this.state.value;
+		console.log(equation);
+		let answer = eval(equation);
+		this.setState({ value: answer });
+	};
+
+	clear = () => {
+		this.setState({ type: "Input: ", value: "" });
 	};
 
 	render() {
@@ -48,7 +66,7 @@ class App extends Component {
 					<tbody>
 						<tr>
 							<td className="inputLabel" colSpan="1">
-								Input:
+								{this.state.type}
 							</td>
 							<td className="screen" colSpan="3">
 								{this.state.value}
@@ -90,9 +108,7 @@ class App extends Component {
 							</td>
 							<td>
 								<button
-									onClick={(e) =>
-										this.updateContent(e.target.value)
-									}
+									onClick={(e) => this.clear(e.target.value)}
 									className="button-clear"
 									value="clear"
 								>
@@ -228,9 +244,7 @@ class App extends Component {
 							</td>
 							<td>
 								<button
-									onClick={(e) =>
-										this.updateContent(e.target.value)
-									}
+									onClick={() => this.equals()}
 									className="button-equal"
 									value="="
 								>
