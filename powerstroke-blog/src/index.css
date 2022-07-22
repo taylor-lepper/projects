@@ -1,0 +1,561 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+@media screen and (min-width: 400px) {
+	.bottom {
+		margin-top: 12%;
+		margin-left: 8%;
+	}
+	.like-btn {
+		width: 80px;
+	}
+	.profile-delete {
+		width: 45px;
+	}
+	.profile-edit {
+		width: 45px;
+	}
+}
+@media screen and (min-width: 600px) {
+	.bottom {
+		margin-top: 12%;
+		margin-left: 10%;
+	}
+	.like-btn {
+		width: 90px;
+	}
+	.profile-delete {
+		width: 55px;
+	}
+	.profile-edit {
+		width: 55px;
+	}
+}
+@media screen and (min-width: 680px) {
+	.bottom {
+		margin-top: 11%;
+		margin-left: 15%;
+	}
+	.like-btn {
+		width: 95px;
+	}
+	.profile-delete {
+		width: 60px;
+	}
+	.profile-edit {
+		width: 60px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.bottom {
+		margin-top: 10%;
+		margin-left: 20%;
+	}
+	.like-btn {
+		width: 100px;
+	}
+	.profile-delete {
+		width: 70px;
+	}
+	.profile-edit {
+		width: 70px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.bottom {
+		margin-top: 7%;
+		margin-left: 25%;
+	}
+	.like-btn {
+		width: 125px;
+	}
+	.profile-delete {
+		width: 85px;
+	}
+	.profile-edit {
+		width: 85px;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.bottom {
+		margin-top: 4%;
+		margin-left: 31%;
+	}
+	.like-btn {
+		width: 150px;
+	}
+	.profile-delete {
+		width: 125px;
+	}
+	.profile-edit {
+		width: 125px;
+	}
+}
+@media screen and (min-width: 1700px) {
+	.bottom {
+		margin-top: 6%;
+		margin-left: 36%;
+	}
+	.like-btn {
+		width: 150px;
+	}
+}
+@media screen and (min-width: 2000px) {
+	.bottom {
+		margin-top: 6%;
+		margin-left: 39%;
+	}
+	.like-btn {
+		width: 150px;
+	}
+}
+
+.message {
+	background-color: red;
+	padding-right: 23%;
+}
+/* .bottom {
+} */
+/* logo top sidenav */
+.listLogo {
+	width: 140px;
+	height: 80px;
+}
+
+.margLeft175 {
+	margin-left: 175px;
+}
+/* post item */
+
+.PostItem {
+	border: black 3px solid;
+	position: relative;
+	border-radius: 6px;
+	min-height: 325px;
+	margin-top: 1%;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	background-color: whitesmoke;
+	padding: 2%;
+}
+
+.mainPostData {
+	padding-bottom: 10%;
+}
+/* 
+.bottom {
+	margin-left: 33%;
+} */
+
+.like-btn {
+	display: block;
+	background-color: limegreen;
+	color: white;
+	font-size: 1.2rem;
+	padding: 0.5%;
+
+	border-radius: 6px;
+
+	margin-top: 3.5%;
+	margin-bottom: 1%;
+
+	border: 2px solid rgb(33, 95, 18);
+	position: absolute;
+	bottom: 0;
+}
+
+.like-btn:hover {
+	background-color: rgb(13, 70, 13);
+}
+
+/* post item */
+
+.booootoooon {
+	background-color: #2a6bac;
+	border-color: white;
+	display: inline-block;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	width: 125px;
+	border: 2px solid rgb(13, 70, 13);
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	border-radius: 0.25rem;
+}
+
+/* border */
+
+.border1 {
+	border: rgb(13, 70, 13) 3px solid;
+	border-radius: 6px;
+	background-color: yellow;
+	margin-top: 1rem;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	font-size: 2rem;
+	padding: 0.5%;
+	color: rgb(13, 70, 13);
+	text-align: center;
+}
+.border1-1 {
+	border: rgb(13, 70, 13) 3px solid;
+	border-radius: 6px;
+	background-color: yellow;
+	margin-top: 1rem;
+	margin-left: 1%;
+	margin-right: 30.5%;
+	padding: 0.5%;
+	font-size: 1.5rem;
+	color: rgb(13, 70, 13);
+	text-align: left;
+	width: 400px;
+}
+.border1-2 {
+	border: rgb(13, 70, 13) 3px solid;
+	border-radius: 6px;
+	background-color: yellow;
+	padding: 0.5%;
+	margin-top: 1rem;
+	margin-left: 1.5%;
+	margin-right: 0%;
+	font-size: 1.5rem;
+	color: rgb(13, 70, 13);
+	text-align: left;
+}
+.border1-3 {
+	border: rgb(13, 70, 13) 3px solid;
+	border-radius: 6px;
+	background-color: yellow;
+	margin-top: 1rem;
+
+	margin-right: 30.5%;
+	padding: 0.5%;
+	font-size: 1.5rem;
+	color: rgb(13, 70, 13);
+	text-align: center;
+	width: 300px;
+}
+
+.border1-4 {
+	border: rgb(13, 70, 13) 3px solid;
+	border-radius: 6px;
+	background-color: rgb(5, 253, 170);
+	padding: 0.5%;
+	margin-top: 1rem;
+	margin-left: 1.5%;
+	margin-right: 0%;
+	font-size: 1.3rem;
+	color: rgb(13, 70, 13);
+	text-align: center;
+}
+.up {
+	display: inline-block;
+}
+.right {
+	padding-bottom: 3%;
+	padding-left: 3%;
+}
+.border2 {
+	border: rgb(13, 70, 13) 3px solid;
+	border-radius: 6px;
+	background-color: rgb(28, 186, 197);
+	margin-left: 1%;
+	margin-right: 1%;
+	font-size: 2rem;
+	color: rgb(13, 70, 13);
+	text-align: center;
+}
+textarea {
+	margin-top: 5%;
+}
+
+.border3 {
+	border: rgb(13, 70, 13) 3px solid;
+	border-radius: 6px;
+	background-color: rgb(28, 186, 197);
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 3rem;
+	color: rgb(13, 70, 13);
+	text-align: center;
+}
+/* border */
+
+/* main */
+
+.Main {
+	background-color: gray;
+}
+.featuredMemberData {
+	display: inline-block;
+}
+.featuredMember {
+	border: rgb(13, 70, 13) 3px solid;
+	border-radius: 6px;
+	padding: 1%;
+	background-color: lightblue;
+	color: rgb(13, 70, 13);
+	text-align: center;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.featuredMember img {
+	margin-right: 35%;
+	border: green 2px solid;
+	border-radius: 6px;
+	box-sizing: content-box;
+}
+
+.vendors {
+	display: inline;
+}
+
+.vendors-btn {
+	display: inline;
+	background-color: limegreen;
+	color: white;
+	font-size: 1.2rem;
+	padding: 0.5%;
+	width: 175px;
+	border-radius: 6px;
+	border: none;
+	margin-top: 0.5%;
+	margin-left: 0.25%;
+	margin-right: 0.25%;
+	border: 2px solid white;
+}
+
+/* main */
+
+/* forums */
+
+.extraMargOnMinePlease {
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+}
+.forumPosts {
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	display: grid;
+	background-color: grey;
+
+	grid-template-columns: 33% 33% 33%;
+}
+
+.create {
+	font-size: 1rem;
+	font-family: tahoma;
+	position: relative;
+}
+
+.padDiv {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-bottom: 1.5rem;
+	margin-right: 2rem;
+}
+
+/* forums */
+
+/* 404 */
+
+.FourOFour {
+	width: 83%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.FourOFour img {
+	width: 50%;
+	margin: 0 auto;
+	display: block;
+}
+
+/* 404 */
+
+/* About */
+.About {
+	display: block;
+	background-color: gray;
+}
+.aboutImgDiv {
+	display: flex;
+}
+.aboutContainer {
+	display: inline-block;
+}
+.imagesLine {
+	display: inline-block;
+}
+.aboutImage {
+	height: 250px;
+	border: rgb(13, 70, 13) 2px solid;
+	border-radius: 6px;
+	margin: 0.5%;
+}
+.aboutInfo {
+	padding-top: 60px;
+	padding-left: 12rem;
+	text-align: justify;
+	list-style-position: inside;
+	font-size: 1.5rem;
+}
+
+/* About */
+
+/* Register & Login */
+.Login,
+.Register {
+	display: inline-block;
+	vertical-align: left;
+	background-color: whitesmoke;
+}
+
+.login {
+	border: rgb(13, 70, 13) 3px solid;
+	border-radius: 6px;
+	padding: 1%;
+	background-color: lightblue;
+	color: rgb(13, 70, 13);
+	text-align: right;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+/* Footer Styles */
+
+.Footer {
+	position: sticky;
+	bottom: 0;
+	color: white;
+	text-align: center;
+	z-index: 0;
+	width: 100%;
+	height: 45px;
+	background: #2a6bac;
+}
+
+/* Footer Styles */
+
+/* profile */
+
+.Profile {
+	background-color: grey;
+}
+
+.ProfilePost {
+	border: black 3px solid;
+	border-radius: 6px;
+	background-color: whitesmoke;
+	margin-top: 1%;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	padding: 2%;
+	position: relative;
+}
+.profilePostData {
+	padding-bottom: 10%;
+}
+.profile-edit {
+	display: inline;
+	background-color: #2a6bac;
+	color: white;
+	font-size: 1.2rem;
+	padding: 0.5%;
+	border-radius: 6px;
+	border: none;
+	margin-top: 0.5%;
+	margin-left: 5%;
+	margin-right: 0.25%;
+	border: 2px solid white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.profile-edit:hover {
+	background-color: #5684b3;
+}
+
+.profile-delete {
+	display: inline;
+	background-color: rgb(184, 17, 17);
+	color: white;
+	font-size: 1.2rem;
+	padding: 0.5%;
+	border-radius: 6px;
+	border: none;
+	margin-top: 0.5%;
+	margin-left: 0.25%;
+	margin-right: 5%;
+	border: 2px solid white;
+	position: absolute;
+
+	bottom: 0;
+	right: 0;
+}
+.profile-delete:hover {
+	background-color: rgb(197, 59, 59);
+}
+
+/* profile */
+
+/* logout */
+.Logout {
+	background-color: gray;
+}
+.paddington {
+	padding-top: 5rem;
+}
+.paddington2 {
+	padding-top: 1rem;
+	text-align: center;
+}
+.paddington3 {
+	padding: 1%;
+}
+
+.box1 {
+	border: rgb(13, 70, 13) 5px solid;
+	border-radius: 10px;
+	padding: 4%;
+	width: 30rem;
+	height: 22rem;
+	background-color: lightblue;
+	color: rgb(13, 70, 13);
+	text-align: center;
+	margin-left: 33%;
+	margin-right: 1%;
+}
+
+/* logout */
+
+/* h1 on left sides pages */
+.sideNav {
+	z-index: 0;
+}
+
+.margin-bottom {
+	margin-bottom: 1%;
+}
