@@ -1,0 +1,2 @@
+{
+"contracts\\SimpleStorage.sol":{"l":{"12":2},"path":"C:\\Users\\taylo\\truffle-example\\contracts\\SimpleStorage.sol","s":{"1":1,"2":2},"b":{},"f":{"1":1,"2":2},"fnMap":{"1":{"name":"set","line":9,"loc":{"start":{"line":9,"column":4},"end":{"line":9,"column":48}}},"2":{"name":"get","line":11,"loc":{"start":{"line":11,"column":4},"end":{"line":13,"column":4}}}},"statementMap":{"1":{"start":{"line":9,"column":33},"end":{"line":9,"column":46}},"2":{"start":{"line":12,"column":8},"end":{"line":12,"column":25}}},"branchMap":{}}}
